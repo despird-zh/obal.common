@@ -12,7 +12,7 @@ import com.dcube.exception.BaseException;
 
 public abstract class Lifecycle {
 
-	private static Logger logger = LoggerFactory.getLogger(CoreFacade.class);
+	private static Logger logger = LoggerFactory.getLogger(Lifecycle.class);
 	/**
 	 * The life cycle state enumeration items.
 	 **/

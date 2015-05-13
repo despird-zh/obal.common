@@ -12,11 +12,10 @@ public abstract class CoreInitializer {
 	/**
 	 * Default constructor, here the hooker will be bind to CoreLauncher
 	 **/
-	public CoreInitializer() throws BaseException{
+	public CoreInitializer()throws BaseException{
 		
 		LifecycleHooker hooker = setupLifecycleHooker();
 		this.hookerName = hooker.name();
-		CoreFacade.regLifecycleHooker(hooker);
 	}
 	
 	/**
