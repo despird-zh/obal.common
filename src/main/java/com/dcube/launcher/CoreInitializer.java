@@ -11,13 +11,13 @@ import com.dcube.exception.BaseException;
 public abstract class CoreInitializer {
 
 	public String hookerName = null;
-	
+	LifecycleHooker hooker = null;
 	/**
 	 * Default constructor, here the hooker will be bind to CoreLauncher
 	 **/
 	public CoreInitializer()throws BaseException{
 		
-		LifecycleHooker hooker = setupLifecycleHooker();
+		hooker = setupLifecycleHooker();
 		this.hookerName = hooker.name();
 	}
 	
@@ -26,4 +26,11 @@ public abstract class CoreInitializer {
 	 **/
 	public abstract LifecycleHooker setupLifecycleHooker() throws BaseException;
 	
+	/**
+	 * Get the LifecycleHooker post default constructor and setup 
+	 **/
+	public LifecycleHooker getLifecycleHooker(){
+		
+		return this.hooker;
+	}
 }
