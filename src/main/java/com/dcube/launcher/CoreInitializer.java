@@ -4,6 +4,9 @@ import com.dcube.exception.BaseException;
 
 /**
  * CoreInitializer help to initial the component of Core instance 
+ * 
+ * @author despird
+ * @version 0.1 2014-3-4
  **/
 public abstract class CoreInitializer {
 
